@@ -1,0 +1,58 @@
+.HeadTitle {
+  width: 1218px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  margin-top: 120px;
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  h1::before {
+    position: absolute;
+    content: "";
+    background-color: #e33e54;
+    height: 5px;
+    width: 74px;
+    top: -11px;
+  }
+  p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HeadTitle {
+    width: 737px;
+    height: 60px;
+    margin-top: 70px;
+    h1 {
+    }
+    p {
+      text-align: justify;
+      max-height: 180px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .HeadTitle {
+    width: 290px;
+    margin-top: 70px;
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      margin-top: -22px;
+      text-align: justify;
+      max-height: 180px;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+}

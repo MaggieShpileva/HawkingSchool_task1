@@ -1,0 +1,118 @@
+.menu_active {
+  animation: show 1s;
+  top: 165px;
+  position: absolute;
+  width: 737px;
+  margin: 0 auto;
+  .main_menu {
+    height: 70px;
+    width: 100%;
+
+    .main_title {
+      height: 35px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-weight: 700;
+      line-height: 23px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      text-transform: uppercase;
+      a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #4c858b;
+        text-decoration: none;
+      }
+    }
+    .contacts {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 100%;
+      .menu {
+        width: 240px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        height: 20px;
+        .p_number {
+          font-size: 12px;
+          line-height: 20px;
+          display: flex;
+
+          .part_1 {
+            font-weight: 400;
+          }
+          .part_2 {
+            font-weight: 700;
+            margin-left: 7px;
+          }
+        }
+        .p_call {
+          color: #ae2236;
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 10px;
+          text-decoration: underline dotted #ae2236;
+        }
+      }
+    }
+  }
+}
+.menu_not_active {
+  display: none;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu_active {
+    margin: 0 auto;
+    width: 100%;
+    top: 70px;
+    height: 50px;
+  }
+  .menu_active .main_menu {
+    margin: 0 auto;
+    width: 270px;
+  }
+  .menu_active .main_menu .main_title {
+    line-height: 10px;
+    height: 25px;
+    justify-content: space-between;
+  }
+  .menu_active .main_menu .main_title a {
+    font-weight: 400;
+    font-size: 7px;
+    max-width: 90px;
+  }
+  .menu_active .main_menu .contacts {
+    width: 100%;
+    margin: 0 auto;
+    height: 20px;
+  }
+  .menu_active .main_menu .contacts .menu {
+    width: 300px;
+    justify-content: space-around;
+  }
+  .menu_active .main_menu .contacts .menu .p_number {
+    font-size: 6px;
+    width: 70px;
+  }
+  .menu_active .main_menu .contacts .menu .p_call {
+    font-size: 6px;
+    width: 70px;
+  }
+}

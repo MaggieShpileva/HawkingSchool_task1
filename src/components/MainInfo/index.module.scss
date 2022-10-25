@@ -1,0 +1,137 @@
+.MainInfo {
+  width: 1218px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73.14px;
+    color: #000000;
+    text-align: left;
+  }
+  .menu {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: #e5e5e5 1px solid;
+    border-bottom: #e5e5e5 1px solid;
+    height: 48px;
+
+    .main_page {
+      color: #b1b1b1;
+      position: relative;
+      min-width: 50px;
+    }
+    .main_page::after {
+      content: "";
+      background: url("../../images/pointer.png") no-repeat;
+      height: 7px;
+      width: 4px;
+      position: absolute;
+      margin: 4px 0 0 8.44px;
+    }
+    .finish_page {
+      color: #4c858b;
+      margin-left: 20px;
+    }
+  }
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 47px;
+
+    .name {
+      font-weight: 600;
+      color: #ae2236;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: row;
+    img {
+      position: relative;
+      margin-right: -170px;
+      margin-top: -40px;
+    }
+    .title {
+      width: 629px;
+      height: 123px;
+      text-align: left;
+      h2 {
+        font-weight: 600;
+        font-size: 40px;
+        margin: 0;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: 50px;
+        color: #ae2236;
+        margin: 0;
+      }
+    }
+    .items {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left;
+
+      p {
+        margin-left: 56px;
+      }
+      p::before {
+        position: absolute;
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #ea6628;
+        margin: 7px 0 0 -30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .MainInfo {
+    height: 850px;
+    width: 737px;
+    margin: 0 auto;
+    border-top: #e5e5e5 1px solid;
+  }
+
+  .MainInfo .description img {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .MainInfo {
+    width: 290px;
+    height: 1100px;
+  }
+  .MainInfo h1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .MainInfo .description .title {
+    line-height: 37px;
+  }
+  .MainInfo .description .title h2 {
+    font-size: 20px;
+  }
+  .MainInfo .description .title h1 {
+    font-size: 30px;
+  }
+  .MainInfo .description .title .items {
+    font-size: 14px;
+  }
+  .MainInfo .description .title .items p {
+    margin-left: 45px;
+  }
+}

@@ -1,0 +1,80 @@
+.WhyCompany {
+  width: 1218px;
+  font-family: Montserrat;
+
+  .description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      margin-top: 51px;
+      width: 315px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+
+      img {
+        width: 79px;
+        height: 79px;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+      }
+      p {
+        margin: 5px;
+        span {
+          color: #e33e54;
+          font-weight: 600;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .WhyCompany .description {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 737px;
+    height: 730px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .WhyCompany .description div {
+    align-items: center;
+    width: 353px;
+  }
+
+  .WhyCompany .description div h2 {
+    font-size: 18px;
+  }
+
+  .WhyCompany .description div p {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .WhyCompany {
+    width: 290px;
+  }
+
+  .WhyCompany .description {
+    flex-wrap: nowrap;
+    margin-top: 180px;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+  }
+
+  .WhyCompany .description div {
+    width: 290px;
+  }
+}

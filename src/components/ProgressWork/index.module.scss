@@ -1,0 +1,93 @@
+.ProgressWork {
+  width: 1218px;
+  font-family: Montserrat;
+
+  .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: left;
+      margin-left: 70px;
+      max-height: 70px;
+      position: absolute;
+    }
+    span {
+      font-weight: 700;
+      font-size: 70px;
+      color: #e33e54;
+      opacity: 0.2;
+      margin-right: 42px;
+      width: 30px;
+      position: absolute;
+      top: 0;
+    }
+    .left_items,
+    .rigth_items {
+      div {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        position: relative;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .ProgressWork {
+    margin-bottom: 50px;
+  }
+  .ProgressWork .items {
+    width: 737px;
+    margin: 0 auto;
+  }
+  .ProgressWork .items p {
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 50px;
+  }
+  .ProgressWork .items span {
+    font-size: 50px;
+    margin-right: 21px;
+  }
+  .ProgressWork .items .left_items div {
+    width: 307px;
+    align-items: baseline;
+  }
+  .ProgressWork .items .rigth_items div {
+    width: 307px;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 320px) {
+  .ProgressWork {
+    width: 290px;
+    margin-bottom: -30px;
+  }
+
+  .ProgressWork .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ProgressWork .items .left_items div {
+    flex-direction: column;
+    max-height: 60px;
+  }
+
+  .ProgressWork .items .rigth_items {
+    margin-top: 50px;
+  }
+
+  .ProgressWork .items .rigth_items div {
+    max-height: 85px;
+  }
+
+  .ProgressWork .items p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-left: 40px;
+  }
+}
